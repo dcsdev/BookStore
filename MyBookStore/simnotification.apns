@@ -1,0 +1,14 @@
+{
+    "aps": {
+        "category": "NEW_ARRIVAL",
+      "alert": {
+        "title": "New Book Arrival",
+        "subtitle": "A Book You May Like Has Arrived!!",
+        "body": "There Has Been A New Sale Listed! Open The App To Check It Out",
+        "badge": 10
+      },
+      "mutable-content": 1
+    },
+    "podcast-image": "https://media3.giphy.com/media/ckPqcobsuNzT2chyvz/200.gif",
+    "book-name": "Dear Universe, I Get It Now"
+  }

@@ -3,31 +3,89 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		220E1F03253B4A2D00378AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E1F02253B4A2D00378AE3 /* AppDelegate.swift */; };
 		220E1F05253B4A2D00378AE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E1F04253B4A2D00378AE3 /* SceneDelegate.swift */; };
-		220E1F07253B4A2D00378AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E1F06253B4A2D00378AE3 /* ViewController.swift */; };
+		220E1F07253B4A2D00378AE3 /* BooksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E1F06253B4A2D00378AE3 /* BooksVC.swift */; };
 		220E1F0A253B4A2D00378AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220E1F08253B4A2D00378AE3 /* Main.storyboard */; };
 		220E1F0C253B4A2F00378AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220E1F0B253B4A2F00378AE3 /* Assets.xcassets */; };
 		220E1F0F253B4A2F00378AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220E1F0D253B4A2F00378AE3 /* LaunchScreen.storyboard */; };
+		220E1F1A253B57A700378AE3 /* simnotification.apns in Resources */ = {isa = PBXBuildFile; fileRef = 220E1F19253B57A700378AE3 /* simnotification.apns */; };
+		22245389255347590065335D /* NewArrivalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22245388255347590065335D /* NewArrivalsVC.swift */; };
+		2224538F25534C8F0065335D /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224538E25534C8F0065335D /* SettingsVC.swift */; };
+		222453932553592F0065335D /* NewArrivalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222453922553592F0065335D /* NewArrivalCell.swift */; };
+		228B853C25448BD500075ABE /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B853B25448BD500075ABE /* Notification+Name.swift */; };
+		228B853F254497B500075ABE /* APNSPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B853E254497B500075ABE /* APNSPayload.swift */; };
+		228B85492544A62B00075ABE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B85482544A62B00075ABE /* NotificationService.swift */; };
+		228B854D2544A62B00075ABE /* MyBookStoreNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 228B85462544A62B00075ABE /* MyBookStoreNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22CAFC23256C8DCE00AC4221 /* simbasicnotificationapns.apns in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFC22256C8DCE00AC4221 /* simbasicnotificationapns.apns */; };
+		22E3A293253CD36D00C5F0DD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A292253CD36D00C5F0DD /* Book.swift */; };
+		22E3A296253CD8E200C5F0DD /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A295253CD8E200C5F0DD /* BookData.swift */; };
+		22E3A29A253CE60300C5F0DD /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A299253CE60300C5F0DD /* BookCell.swift */; };
+		22E3A2A0253CED6E00C5F0DD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 22E3A29F253CED6E00C5F0DD /* SDWebImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		228B854B2544A62B00075ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220E1EF7253B4A2D00378AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228B85452544A62B00075ABE;
+			remoteInfo = MyBookStoreNotificationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		228B85512544A62B00075ABE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				228B854D2544A62B00075ABE /* MyBookStoreNotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		220E1EFF253B4A2D00378AE3 /* MyBookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		220E1F02253B4A2D00378AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		220E1F04253B4A2D00378AE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		220E1F06253B4A2D00378AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		220E1F06253B4A2D00378AE3 /* BooksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksVC.swift; sourceTree = "<group>"; };
 		220E1F09253B4A2D00378AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		220E1F0B253B4A2F00378AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		220E1F0E253B4A2F00378AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		220E1F10253B4A2F00378AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220E1F19253B57A700378AE3 /* simnotification.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = simnotification.apns; sourceTree = "<group>"; };
+		22245388255347590065335D /* NewArrivalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArrivalsVC.swift; sourceTree = "<group>"; };
+		2224538E25534C8F0065335D /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		222453922553592F0065335D /* NewArrivalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArrivalCell.swift; sourceTree = "<group>"; };
+		228B853B25448BD500075ABE /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
+		228B853E254497B500075ABE /* APNSPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSPayload.swift; sourceTree = "<group>"; };
+		228B85462544A62B00075ABE /* MyBookStoreNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyBookStoreNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		228B85482544A62B00075ABE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		228B854A2544A62B00075ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CAFC22256C8DCE00AC4221 /* simbasicnotificationapns.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simbasicnotificationapns.apns; sourceTree = "<group>"; };
+		22E3A292253CD36D00C5F0DD /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		22E3A295253CD8E200C5F0DD /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		22E3A299253CE60300C5F0DD /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		220E1EFC253B4A2D00378AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3A2A0253CED6E00C5F0DD /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228B85432544A62B00075ABE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				220E1F01253B4A2D00378AE3 /* MyBookStore */,
+				228B85472544A62B00075ABE /* MyBookStoreNotificationExtension */,
 				220E1F00253B4A2D00378AE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				220E1EFF253B4A2D00378AE3 /* MyBookStore.app */,
+				228B85462544A62B00075ABE /* MyBookStoreNotificationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +116,58 @@
 		220E1F01253B4A2D00378AE3 /* MyBookStore */ = {
 			isa = PBXGroup;
 			children = (
+				228B853A25448BA200075ABE /* Extentsion */,
+				22E3A298253CE5DD00C5F0DD /* View */,
+				22E3A291253CD35800C5F0DD /* Model */,
 				220E1F02253B4A2D00378AE3 /* AppDelegate.swift */,
 				220E1F04253B4A2D00378AE3 /* SceneDelegate.swift */,
-				220E1F06253B4A2D00378AE3 /* ViewController.swift */,
+				220E1F06253B4A2D00378AE3 /* BooksVC.swift */,
+				22245388255347590065335D /* NewArrivalsVC.swift */,
 				220E1F08253B4A2D00378AE3 /* Main.storyboard */,
 				220E1F0B253B4A2F00378AE3 /* Assets.xcassets */,
 				220E1F0D253B4A2F00378AE3 /* LaunchScreen.storyboard */,
 				220E1F10253B4A2F00378AE3 /* Info.plist */,
+				220E1F19253B57A700378AE3 /* simnotification.apns */,
+				22CAFC22256C8DCE00AC4221 /* simbasicnotificationapns.apns */,
+				22E3A295253CD8E200C5F0DD /* BookData.swift */,
+				2224538E25534C8F0065335D /* SettingsVC.swift */,
 			);
 			path = MyBookStore;
+			sourceTree = "<group>";
+		};
+		228B853A25448BA200075ABE /* Extentsion */ = {
+			isa = PBXGroup;
+			children = (
+				228B853B25448BD500075ABE /* Notification+Name.swift */,
+			);
+			path = Extentsion;
+			sourceTree = "<group>";
+		};
+		228B85472544A62B00075ABE /* MyBookStoreNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				228B85482544A62B00075ABE /* NotificationService.swift */,
+				228B854A2544A62B00075ABE /* Info.plist */,
+			);
+			path = MyBookStoreNotificationExtension;
+			sourceTree = "<group>";
+		};
+		22E3A291253CD35800C5F0DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A292253CD36D00C5F0DD /* Book.swift */,
+				228B853E254497B500075ABE /* APNSPayload.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22E3A298253CE5DD00C5F0DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A299253CE60300C5F0DD /* BookCell.swift */,
+				222453922553592F0065335D /* NewArrivalCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +180,37 @@
 				220E1EFB253B4A2D00378AE3 /* Sources */,
 				220E1EFC253B4A2D00378AE3 /* Frameworks */,
 				220E1EFD253B4A2D00378AE3 /* Resources */,
+				228B85512544A62B00075ABE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				228B854C2544A62B00075ABE /* PBXTargetDependency */,
+			);
+			name = MyBookStore;
+			packageProductDependencies = (
+				22E3A29F253CED6E00C5F0DD /* SDWebImage */,
+			);
+			productName = MyBookStore;
+			productReference = 220E1EFF253B4A2D00378AE3 /* MyBookStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		228B85452544A62B00075ABE /* MyBookStoreNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228B854E2544A62B00075ABE /* Build configuration list for PBXNativeTarget "MyBookStoreNotificationExtension" */;
+			buildPhases = (
+				228B85422544A62B00075ABE /* Sources */,
+				228B85432544A62B00075ABE /* Frameworks */,
+				228B85442544A62B00075ABE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyBookStore;
-			productName = MyBookStore;
-			productReference = 220E1EFF253B4A2D00378AE3 /* MyBookStore.app */;
-			productType = "com.apple.product-type.application";
+			name = MyBookStoreNotificationExtension;
+			productName = MyBookStoreNotificationExtension;
+			productReference = 228B85462544A62B00075ABE /* MyBookStoreNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +224,9 @@
 					220E1EFE253B4A2D00378AE3 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					228B85452544A62B00075ABE = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 220E1EFA253B4A2D00378AE3 /* Build configuration list for PBXProject "MyBookStore" */;
@@ -110,11 +238,15 @@
 				Base,
 			);
 			mainGroup = 220E1EF6253B4A2D00378AE3;
+			packageReferences = (
+				22E3A29E253CED6E00C5F0DD /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 220E1F00253B4A2D00378AE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				220E1EFE253B4A2D00378AE3 /* MyBookStore */,
+				228B85452544A62B00075ABE /* MyBookStoreNotificationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +257,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				220E1F0F253B4A2F00378AE3 /* LaunchScreen.storyboard in Resources */,
+				220E1F1A253B57A700378AE3 /* simnotification.apns in Resources */,
 				220E1F0C253B4A2F00378AE3 /* Assets.xcassets in Resources */,
+				22CAFC23256C8DCE00AC4221 /* simbasicnotificationapns.apns in Resources */,
 				220E1F0A253B4A2D00378AE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228B85442544A62B00075ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +278,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220E1F07253B4A2D00378AE3 /* ViewController.swift in Sources */,
+				228B853F254497B500075ABE /* APNSPayload.swift in Sources */,
+				22E3A29A253CE60300C5F0DD /* BookCell.swift in Sources */,
+				22E3A296253CD8E200C5F0DD /* BookData.swift in Sources */,
+				222453932553592F0065335D /* NewArrivalCell.swift in Sources */,
+				22E3A293253CD36D00C5F0DD /* Book.swift in Sources */,
+				220E1F07253B4A2D00378AE3 /* BooksVC.swift in Sources */,
+				228B853C25448BD500075ABE /* Notification+Name.swift in Sources */,
+				22245389255347590065335D /* NewArrivalsVC.swift in Sources */,
 				220E1F03253B4A2D00378AE3 /* AppDelegate.swift in Sources */,
 				220E1F05253B4A2D00378AE3 /* SceneDelegate.swift in Sources */,
+				2224538F25534C8F0065335D /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228B85422544A62B00075ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228B85492544A62B00075ABE /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		228B854C2544A62B00075ABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 228B85452544A62B00075ABE /* MyBookStoreNotificationExtension */;
+			targetProxy = 228B854B2544A62B00075ABE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		220E1F08253B4A2D00378AE3 /* Main.storyboard */ = {
@@ -284,8 +449,11 @@
 		220E1F14253B4A2F00378AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyBookStore/MyBookStore.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4ZHTM22E;
 				INFOPLIST_FILE = MyBookStore/Info.plist;
@@ -293,8 +461,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DoulgasDevelops.MyBookStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.MyBookStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +472,11 @@
 		220E1F15253B4A2F00378AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyBookStore/MyBookStore.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4ZHTM22E;
 				INFOPLIST_FILE = MyBookStore/Info.plist;
@@ -312,8 +484,49 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DoulgasDevelops.MyBookStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.MyBookStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		228B854F2544A62B00075ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M4ZHTM22E;
+				INFOPLIST_FILE = MyBookStoreNotificationExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.MyBookStore.MyBookStoreNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		228B85502544A62B00075ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M4ZHTM22E;
+				INFOPLIST_FILE = MyBookStoreNotificationExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.MyBookStore.MyBookStoreNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,7 +553,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		228B854E2544A62B00075ABE /* Build configuration list for PBXNativeTarget "MyBookStoreNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228B854F2544A62B00075ABE /* Debug */,
+				228B85502544A62B00075ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22E3A29E253CED6E00C5F0DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22E3A29F253CED6E00C5F0DD /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22E3A29E253CED6E00C5F0DD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 220E1EF7253B4A2D00378AE3 /* Project object */;
 }
